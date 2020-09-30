@@ -1,0 +1,43 @@
+{
+  "name": "quantum-metrics-take-home",
+  "version": "1.0.0",
+  "description": "TH for QM",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack-dev-server --open & nodemon server/server.js || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/najito/QM-TH.git"
+  },
+  "author": "Nobu Ajito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/najito/QM-TH/issues"
+  },
+  "homepage": "https://github.com/najito/QM-TH#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "regenerator-runtime": "^0.13.7",
+    "sass-loader": "^10.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "nodemon": "^2.0.4",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
